@@ -1,0 +1,504 @@
+;; Emacs: 27.0.50 Tramp: 2.3.3-pre -*- mode: outline; -*-
+00:33:29.984549 tramp-do-file-attributes-with-stat (5) # file attributes with stat: /opt/bee/home/username/
+00:33:29.994549 tramp-send-command (6) # echo are you awake
+00:33:30.264547 tramp-wait-for-regexp (6) # 
+are you awake
+///968482f70fadb181bfc80485e778edcd#$
+00:33:30.264547 tramp-send-command (6) # ( (test -e /opt/bee/home/username/ || test -h /opt/bee/home/username/) && (env QUOTING_STYLE=locale \stat -c '((/////%N/////) %h /////%U///// /////%G///// %Xe0 %Ye0 %Ze0 %se0 /////%A///// t %ie0 -1)' /opt/bee/home/username/ | sed -e 's/"/\\"/g' -e 's/\/\/\/\/\//"/g') || echo nil) 2>/dev/null; echo tramp_exit_status $?
+00:33:30.614543 tramp-wait-for-regexp (6) # 
+(("`/opt/bee/home/username/'") 26 "username" "bceuser" 1509597856e0 1509597856e0 1509597856e0 1447e0 "drwx------" t 8706271905e0 -1)
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:30.624543 tramp-send-command (6) # test -r /opt/bee/home/username/ 2>/dev/null; echo tramp_exit_status $?
+00:33:30.894540 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:31.464535 tramp-send-command (6) # test -d /opt/bee/home 2>/dev/null; echo tramp_exit_status $?
+00:33:31.734532 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:31.754532 tramp-do-file-attributes-with-stat (5) # file attributes with stat: /opt/bee/home/
+00:33:31.754532 tramp-send-command (6) # ( (test -e /opt/bee/home/ || test -h /opt/bee/home/) && (env QUOTING_STYLE=locale \stat -c '((/////%N/////) %h /////%U///// /////%G///// %Xe0 %Ye0 %Ze0 %se0 /////%A///// t %ie0 -1)' /opt/bee/home/ | sed -e 's/"/\\"/g' -e 's/\/\/\/\/\//"/g') || echo nil) 2>/dev/null; echo tramp_exit_status $?
+00:33:32.044529 tramp-wait-for-regexp (6) # 
+(("`/opt/bee/home/'") 985 "root" "root" 1507818802e0 1507818802e0 1511598328e0 24614e0 "drwxr-xr-x" t 8605203093e0 -1)
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:33.084518 tramp-send-command (6) # test -d /opt/bee 2>/dev/null; echo tramp_exit_status $?
+00:33:33.354516 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:33.374516 tramp-do-file-attributes-with-stat (5) # file attributes with stat: /opt/bee/
+00:33:33.374516 tramp-send-command (6) # ( (test -e /opt/bee/ || test -h /opt/bee/) && (env QUOTING_STYLE=locale \stat -c '((/////%N/////) %h /////%U///// /////%G///// %Xe0 %Ye0 %Ze0 %se0 /////%A///// t %ie0 -1)' /opt/bee/ | sed -e 's/"/\\"/g' -e 's/\/\/\/\/\//"/g') || echo nil) 2>/dev/null; echo tramp_exit_status $?
+00:33:33.675513 tramp-wait-for-regexp (6) # 
+(("`/opt/bee/'") 18 "root" "root" 1511550283e0 1506336154e0 1506336154e0 4096e0 "drwxr-xr-x" t 2e0 -1)
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:34.967500 tramp-send-command (6) # test -d /opt 2>/dev/null; echo tramp_exit_status $?
+00:33:35.237497 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:35.237497 tramp-do-file-attributes-with-stat (5) # file attributes with stat: /opt/
+00:33:35.237497 tramp-send-command (6) # ( (test -e /opt/ || test -h /opt/) && (env QUOTING_STYLE=locale \stat -c '((/////%N/////) %h /////%U///// /////%G///// %Xe0 %Ye0 %Ze0 %se0 /////%A///// t %ie0 -1)' /opt/ | sed -e 's/"/\\"/g' -e 's/\/\/\/\/\//"/g') || echo nil) 2>/dev/null; echo tramp_exit_status $?
+00:33:35.527494 tramp-wait-for-regexp (6) # 
+(("`/opt/'") 16 "root" "root" 1511626460e0 1511440094e0 1511440094e0 4096e0 "dr-xr-xr-x" t 2e0 -1)
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:39.977450 tramp-send-command (6) # test -d / 2>/dev/null; echo tramp_exit_status $?
+00:33:40.237447 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:40.257447 tramp-do-file-attributes-with-stat (5) # file attributes with stat: /
+00:33:40.257447 tramp-send-command (6) # ( (test -e / || test -h /) && (env QUOTING_STYLE=locale \stat -c '((/////%N/////) %h /////%U///// /////%G///// %Xe0 %Ye0 %Ze0 %se0 /////%A///// t %ie0 -1)' / | sed -e 's/"/\\"/g' -e 's/\/\/\/\/\//"/g') || echo nil) 2>/dev/null; echo tramp_exit_status $?
+00:33:40.557444 tramp-wait-for-regexp (6) # 
+(("`/'") 27 "root" "root" 1511577989e0 1511577504e0 1511577504e0 4096e0 "dr-xr-xr-x" t 2e0 -1)
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:40.587444 tramp-get-remote-perl (5) # Finding a suitable ‘perl’ command
+00:33:40.587444 tramp-send-command (6) # which \perl5 | wc -w
+00:33:40.867441 tramp-wait-for-regexp (6) # 
+which: no perl5 in (/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin)
+0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:40.867441 tramp-send-command (6) # while read d; do if test -x $d/perl5 && test -f $d/perl5; then echo tramp_executable $d/perl5; break; fi; done <<'51b92325703b9611f4719e42459ecbe6'
+/bin
+/usr/bin
+/sbin
+/usr/sbin
+/usr/local/bin
+/usr/local/sbin
+51b92325703b9611f4719e42459ecbe6
+00:33:41.137438 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:33:41.137438 tramp-send-command (6) # which \perl | wc -w
+00:33:41.417435 tramp-wait-for-regexp (6) # 
+1
+///968482f70fadb181bfc80485e778edcd#$
+00:33:41.417435 tramp-send-command (6) # \perl -e 'print "Hello
+";' 2>/dev/null; echo tramp_exit_status $?
+00:33:41.707432 tramp-wait-for-regexp (6) # 
+Hello
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:41.707432 tramp-send-command (6) # \perl -e 'use File::Spec;' 2>/dev/null; echo tramp_exit_status $?
+00:33:41.997430 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:41.997430 tramp-send-command (6) # \perl -e 'use Cwd "realpath";' 2>/dev/null; echo tramp_exit_status $?
+00:33:42.287427 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:42.287427 tramp-maybe-send-script (5) # Sending script ‘tramp_perl_file_name_all_completions’...
+00:33:42.287427 tramp-send-command (6) # tramp_perl_file_name_all_completions () {
+\perl -e '
+opendir(d, $ARGV[0]) || die("$ARGV[0]: $!\nfail\n");
+@files = readdir(d); closedir(d);
+foreach $f (@files) {
+ if (-d "$ARGV[0]/$f") {
+  print "$f/\n";
+ }
+ else {
+  print "$f\n";
+ }
+}
+print "ok\n"
+' "$1" 2>/dev/null
+} 2>/dev/null; echo tramp_exit_status $?
+00:33:42.557424 tramp-wait-for-regexp (6) # 
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:42.557424 tramp-maybe-send-script (5) # Sending script ‘tramp_perl_file_name_all_completions’...done
+00:33:42.557424 tramp-send-command (6) # tramp_perl_file_name_all_completions /
+00:33:42.847421 tramp-wait-for-regexp (6) # 
+boot/
+jupyterhub_cookie_secret
+proc/
+etc/
+installed-list.txt
+net/
+selinux/
+sys/
+srv/
+.autofsck
+cgroup/
+opt/
+dev/
+media/
+.autorelabel
+usr/
+var/
+lib/
+mnt/
+lib64/
+./
+jupyterhub.sqlite
+bin/
+restore3/
+sbin/
+.pki/
+lost+found/
+tmp/
+../
+root/
+misc/
+home/
+ok
+///968482f70fadb181bfc80485e778edcd#$
+00:33:47.388376 tramp-do-file-attributes-with-stat (5) # file attributes with stat: /bin/
+00:33:47.398376 tramp-send-command (6) # ( (test -e /bin/ || test -h /bin/) && (env QUOTING_STYLE=locale \stat -c '((/////%N/////) %h /////%U///// /////%G///// %Xe0 %Ye0 %Ze0 %se0 /////%A///// t %ie0 -1)' /bin/ | sed -e 's/"/\\"/g' -e 's/\/\/\/\/\//"/g') || echo nil) 2>/dev/null; echo tramp_exit_status $?
+00:33:47.688373 tramp-wait-for-regexp (6) # 
+(("`/bin/'") 2 "root" "root" 1511578381e0 1511577958e0 1511577958e0 4096e0 "dr-xr-xr-x" t 131080e0 -1)
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:47.728372 tramp-send-command (6) # tramp_perl_file_name_all_completions /bin/
+00:33:48.218367 tramp-wait-for-regexp (6) # 
+hostname
+pwd
+rvi
+taskset
+gettext
+plymouth
+rnano
+uname
+ps
+dnsdomainname
+su
+tracepath6
+ln
+grep
+ex
+cat
+fgrep
+unlink
+rm
+readlink
+cp
+df
+traceroute6
+cgsnapshot
+rview
+sed
+chmod
+dbus-daemon
+gawk
+sort
+cgdelete
+more
+dbus-send
+ed
+chgrp
+lscgroup
+mountpoint
+iptables-xml
+rmdir
+zcat
+view
+cut
+netstat
+setfont
+unicode_start
+tracepath
+dd
+csh
+ksh93
+mv
+vi
+basename
+kill
+mktemp
+mail
+mkdir
+mount
+findmnt
+keyctl
+cgclassify
+lssubsys
+gtar
+redhat_lsb_init
+false
+unicode_stop
+echo
+cgexec
+true
+kbd_mode
+iptables-xml-1.4.7
+ping6
+arch
+./
+env
+stty
+ls
+gzip
+mknod
+dash
+nisdomainname
+ksh
+setserial
+dbus-uuidgen
+cgset
+login
+touch
+dumpkeys
+ulockmgr_server
+sleep
+red
+gunzip
+traceroute
+fusermount
+cpio
+ypdomainname
+rpm
+chown
+cgcreate
+sync
+date
+dbus-cleanup-sockets
+bash
+egrep
+ping
+awk
+cgget
+tcsh
+loadkeys
+umount
+lsblk
+tar
+domainname
+../
+nice
+dmesg
+mailx
+raw
+nano
+link
+find
+ipcalc
+sh
+logger
+usleep
+dbus-monitor
+ok
+///968482f70fadb181bfc80485e778edcd#$
+00:33:52.229327 tramp-maybe-open-connection (3) # Opening connection for username@host using plink...
+00:33:52.249327 tramp-maybe-open-connection (6) # C:/Users/username/emacs/libexec/emacs/27.0.50/x86_64-w64-mingw32/cmdproxy.exe
+00:33:52.389326 tramp-wait-for-regexp (6) # 
+Microsoft Windows [�汾 6.1.7601]
+��Ȩ���� (c) 2009 Microsoft Corporation����������Ȩ����
+
+c:\Users\username\AppData\Local\Temp>
+00:33:52.389326 tramp-maybe-open-connection (3) # Sending command ‘plink -l username  -ssh host && exit || exit’
+00:33:52.399326 tramp-send-command (6) # plink -l username  -ssh host && exit || exit
+00:33:52.399326 tramp-process-actions (3) # Waiting for prompts from remote shell...
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:52.449325 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:53.459315 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:54.469305 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:54.479305 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:54.479305 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:54.479305 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:54.710302 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:54.710302 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:54.710302 tramp-process-one-action (5) # Call ‘tramp-action-password’
+00:33:54.710302 tramp-action-password (3) # Sending password
+00:33:54.730302 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:54.730302 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:54.730302 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:54.730302 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:54.730302 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:54.730302 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:54.740302 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:54.740302 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:54.780302 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:54.790302 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:54.790302 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:55.780292 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:55.790292 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:55.790292 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:55.790292 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(\(?:^\|\)[^]#$%>
+]*#?[]#$%>] *\(\[[0-9;]*[a-zA-Z] *\)*\)\'" from remote shell
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(\(Are you sure you want to continue connecting (yes/no)\?\)\s-*\)\'" from remote shell
+00:33:56.800282 tramp-process-one-action (5) # Looking for regexp "\(\(\(?:Store key in cache\? (y/\|Update cached key\? (y/n, Return cancels connectio\)n)\)\s-*\)\'" from remote shell
+00:33:56.810281 tramp-process-one-action (5) # Looking for regexp "\(\(TERM = (.*)\|Terminal type\? \[.*\]\)\s-*\)\'" from remote shell
+00:33:56.810281 tramp-process-one-action (5) # Looking for regexp "\(\)\'" from remote shell
+00:33:56.810281 tramp-process-one-action (5) # Call ‘tramp-action-process-alive’
+00:33:57.690273 tramp-process-one-action (5) # Looking for regexp "\(.*\(user\|login\)\( .*\)?: *\)\'" from remote shell
+00:33:57.690273 tramp-process-one-action (5) # Looking for regexp "\(^.*\(\(?:adgangskode\|contrase\(?:\(?:ny\|ñ\)a\)\|geslo\|h\(?:\(?:asł\|esl\)o\)\|iphasiwedi\|jelszó\|l\(?:ozinka\|ösenord\)\|m\(?:ot de passe\|ật khẩu\)\|pa\(?:rola\|s\(?:ahitza\|s\(?: phrase\|code\|ord\|phrase\|wor[dt]\)\|vorto\)\)\|s\(?:alasana\|enha\|laptažodis\)\|wachtwoord\|лозинка\|пароль\|ססמה\|كلمة السر\|गुप्तशब्द\|शब्दकूट\|গুপ্তশব্দ\|পাসওয়ার্ড\|ਪਾਸਵਰਡ\|પાસવર્ડ\|ପ୍ରବେଶ ସଙ୍କେତ\|கடவுச்சொல்\|సంకేతపదము\|ಗುಪ್ತಪದ\|അടയാളവാക്ക്\|රහස්පදය\|ពាក្យសម្ងាត់\|パスワード\|密[码碼]\|암호\)\).*: ? *\)\'" from remote shell
+00:33:57.690273 tramp-process-one-action (5) # Looking for regexp "\(^.*\(Connection \(?:\(?:clo\|refu\)sed\)\|Host key verification failed\.\|Login \(?:[Ii]ncorrect\)\|N\(?:ame or service not known\|o supported authentication methods left to try!\)\|Permission denied\|\(?:Sorry, try again\|Timeout, server not responding\)\.\).*\|^.*\(Received signal [0-9]+\).*\)\'" from remote shell
+00:33:57.690273 tramp-process-one-action (5) # Looking for regexp "\(^[^#$%>
+]*[#$%>] *\)\'" from remote shell
+00:33:57.690273 tramp-process-one-action (5) # Call ‘tramp-action-succeed’
+00:33:57.690273 tramp-process-actions (6) # 
+env: c:/opt/bee/home/username/test/: No such file or directory
+Using username "username".
+
+Process shell exited abnormally with code 127
+
+plink -l username  -ssh host && exit || exit
+username@host's password: 
+Last login: Sat Nov 25 17:22:26 2017 from host.com
+]0;username@host:~[?1034h[username@host ~]$ 
+00:33:57.700273 tramp-process-actions (3) # Waiting for prompts from remote shell...done
+00:33:57.700273 tramp-maybe-open-connection (3) # Found remote shell prompt on ‘host’
+00:33:57.700273 tramp-open-shell (5) # Opening remote shell ‘/bin/sh’...
+00:33:57.700273 tramp-send-command (6) # exec env TERM='dumb' INSIDE_EMACS='27.0.50,tramp:2.3.3-pre' ENV='' HISTFILE=~/.tramp_history PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+00:33:57.980270 tramp-wait-for-regexp (6) # 
+exec env TERM='dumb' INSIDE_EMACS='27.0.50,tramp:2.3.3-p re' ENV='' HISTFILE=~/.tramp_history PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3=''  /bin/sh 
+#$ 
+00:33:57.980270 tramp-send-command (6) # (cd ~/) 2>/dev/null; echo tramp_exit_status $?
+00:33:58.250267 tramp-wait-for-regexp (6) # 
+(cd ~/) 2>/dev/null; echo tramp_exit_status $?
+tramp_exit_status 0
+#$ 
+00:33:58.250267 tramp-open-shell (5) # Opening remote shell ‘/bin/sh’...done
+00:33:58.250267 tramp-open-connection-setup-interactive-shell (5) # Setting up remote shell environment
+00:33:58.250267 tramp-send-command (6) # stty -inlcr -onlcr -echo kill '^U' erase '^H'
+00:33:58.520264 tramp-wait-for-regexp (6) # 
+stty -inlcr -onlcr -echo kill '^U' erase '^H'
+#$ 
+00:33:58.520264 tramp-send-command (6) # echo foo
+00:33:58.790262 tramp-wait-for-regexp (6) # 
+foo
+#$ 
+00:33:58.790262 tramp-open-connection-setup-interactive-shell (5) # Setting shell prompt
+00:33:58.790262 tramp-send-command (6) # PS1=///968482f70fadb181bfc80485e778edcd\#\$ PS2='' PS3='' PROMPT_COMMAND=''
+00:33:59.060259 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:33:59.060259 tramp-open-connection-setup-interactive-shell (5) # Checking system information
+00:33:59.060259 tramp-send-command (6) # echo \"`uname -sr`\" 2>/dev/null; echo tramp_exit_status $?
+00:33:59.340256 tramp-wait-for-regexp (6) # 
+"Linux 2.6.32-696.1.1.el6.x86_64"
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:33:59.340256 tramp-open-connection-setup-interactive-shell (5) # Determining coding system
+00:33:59.340256 tramp-send-command (6) # echo foo ; echo bar
+00:33:59.610253 tramp-wait-for-regexp (6) # 
+foo
+bar
+///968482f70fadb181bfc80485e778edcd#$
+00:33:59.610253 tramp-open-connection-setup-interactive-shell (5) # Setting coding system to ‘utf-8’ and ‘utf-8-unix’
+00:33:59.610253 tramp-send-command (6) # set +o vi +o emacs
+00:33:59.870251 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:33:59.870251 tramp-open-connection-setup-interactive-shell (5) # Checking remote host type for ‘send-process-string’ bug
+00:33:59.870251 tramp-set-remote-path (5) # Setting $PATH environment variable
+00:33:59.870251 tramp-send-command (6) # PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin; export PATH
+00:34:00.140248 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:34:00.140248 tramp-send-command (6) # mesg n 2>/dev/null; biff n 2>/dev/null
+00:34:00.420245 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:34:00.420245 tramp-send-command (6) # stty tab0
+00:34:00.690243 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:34:00.690243 tramp-send-command (6) # stty iutf8 2>/dev/null
+00:34:00.960240 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:34:00.960240 tramp-send-command (6) # echo \"`tty`\" 2>/dev/null; echo tramp_exit_status $?
+00:34:01.230237 tramp-wait-for-regexp (6) # 
+"/dev/pts/34"
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:34:01.230237 tramp-open-connection-setup-interactive-shell (5) # Setting default environment
+00:34:01.230237 tramp-send-command (6) # while read var val; do export $var="$val"; done <<'51b92325703b9611f4719e42459ecbe6'
+LC_ALL en_US.utf8
+ENV ''
+TMOUT 0
+LC_CTYPE ''
+PAGER cat
+51b92325703b9611f4719e42459ecbe6
+00:34:01.500235 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:34:01.500235 tramp-send-command (6) # unset CDPATH HISTORY MAIL MAILCHECK MAILPATH autocorrect correct
+00:34:01.770232 tramp-wait-for-regexp (6) # 
+///968482f70fadb181bfc80485e778edcd#$
+00:34:01.770232 tramp-maybe-open-connection (3) # Opening connection for username@host using plink...done
+00:34:01.770232 tramp-send-command (6) # echo $$ 2>/dev/null; echo tramp_exit_status $?
+00:34:02.040229 tramp-wait-for-regexp (6) # 
+8450
+tramp_exit_status 0
+///968482f70fadb181bfc80485e778edcd#$
+00:34:02.040229 tramp-send-command (6) # cd /opt/bee/home/username/test/ &&  exec  env PS1\=/plink\:username\@host\:/opt/bee/home/username/test/\ \#\$\  TERM\=emacs TERMCAP\=emacs\:co\#135\:tc\=unknown\: INSIDE_EMACS\=27.0.50\,comint c\:/bin/sh -i
+00:42:08.560063 tramp-send-command (6) # echo are you awake
+00:42:08.830060 tramp-wait-for-regexp (6) # 
+are you awake
+///968482f70fadb181bfc80485e778edcd#$
+00:42:08.830060 tramp-send-command (6) # tramp_perl_file_name_all_completions /opt/bee/home/username/test/
+00:42:09.110057 tramp-wait-for-regexp (6) # 
+./
+../
+rsurv_test.cpp
+ex_tensorflow.r
+sas/
+envs.txt
+misc.R
+gt_pts.r
+coxph_bench.r
+DDCP_CD.r
+coxph_bench.r.Rout
+options lang1.sas
+R/
+coxph_bench_nocomp.r.Rout
+jags_parallel.r
+diag/
+test_lifetest.sas
+.dir-locals.el
+raad/
+shiny/
+samplesize.r
+.Rhistory
+survdiff2.r
+ok
+///968482f70fadb181bfc80485e778edcd#$
